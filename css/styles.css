@@ -498,8 +498,14 @@ h1 {
 
     {
 
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
     header img {
         width: 10rem;
+        text-align: center;
     }
     nav {
         margin: 3.5rem 5rem 0rem 2rem;
@@ -509,6 +515,7 @@ h1 {
     nav ul {
     font-size: 12px;
     flex-direction: column;
+    text-align: center;
     }
     
     .section-ppal div h1 {
@@ -553,6 +560,17 @@ h1 {
     width: 100%;
     grid-template-columns: auto ;
     grid-template-rows: auto auto auto auto;
+}
+
+.section-documentation div img {
+        width: 60%;
+        margin: 0;
+        
+}
+
+.img-documentation {
+    display: flex;
+    justify-content: center;
 }
 
 }
