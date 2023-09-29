@@ -21,6 +21,10 @@ nav {
     margin: 3.5rem 5rem 0rem 2rem;
 }
 
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
 nav ul {
     
     list-style: none;
@@ -46,13 +50,17 @@ nav ul li a:hover {
     
 }
 
+.navbar-custom {
+    background-color: orange;
+}
+
 .img-index {
     width: 100%;
 }
 
 header img {
     width: 15rem;
-    margin: 2rem 2rem 0rem 2rem;
+    
 }
 
 .section-ppal div{
@@ -573,6 +581,15 @@ h1 {
     justify-content: center;
 }
 
+.footer-container2 ul {
+flex-wrap: wrap;
+
+}
+
+.section-ppal button {
+    color: black;
+    border-color: black;
+
 }
 
 @media (max-width: 768px){
@@ -590,4 +607,3 @@ h1 {
 @media (max-width: 320px){
 
 }
-
