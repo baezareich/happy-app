@@ -68,7 +68,7 @@ header img {
 }
 .section-ppal {
     display: flex;
-    background: linear-gradient(orange, white);
+    background: orange;
     padding-left: 2rem;
     justify-content: space-between;
 }
@@ -505,7 +505,6 @@ h1 {
 @media (max-width: 1024px)
 
     {
-
     header {
         flex-direction: column;
         align-items: center;
@@ -592,18 +591,90 @@ flex-wrap: wrap;
 
 }
 
+.grid-layout {
+    grid-template-columns: auto auto;
+}
+
+.download-section img {
+    max-width: 100%;
+}
+
+
+.grid-layout {
+    max-width: 100%;
+}
+
+    }
+
 @media (max-width: 768px){
     
+    .section-ppal {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .section-ppal div {
+
+        width: 100%;
+        text-align: center;
+        }
+
+    .section-ppal button{
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        }
+
+    .img-index {
+        width: 100%;
+    }
+
+    .section-ppal div p {
+        text-align: center;
+    }
+
+.grid-layout {
+        grid-template-columns: auto;
+    }
+    
+    
+
+    .download-section img {
+        max-width: 100%;
+        
+    }
+
 }
 
 @media (max-width: 425px){
+
+    .download-section img {
+        max-width: 100%;
+    }
+    
+    .grid-layout {
+        max-width: 100%;
+    }
     
 }
 
 @media (max-width: 375px){
 
+    .download-section img {
+        max-width: 100%;
+    }
+
 }
 
 @media (max-width: 320px){
+
+.download-section img {
+        max-width: 100%;
+    }
+    .grid-layout section {
+        width: 100%;
+    }
+
 
 }
