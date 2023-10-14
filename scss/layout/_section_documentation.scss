@@ -1,0 +1,35 @@
+.section-documentation {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section-documentation div img {
+    width: 100%;
+    margin: 2rem 2rem 0rem 4rem;
+}
+
+.div2-documentation {
+    width: 50%;
+    font-family: montserrat;
+    margin: 10rem 4rem 0rem 4rem;
+}
+
+.div2-documentation h2 {
+    margin-bottom: 2rem;
+}
+
+.div2-documentation p {
+    margin-bottom: 2rem;
+}
+
+
+.div2-documentation button {
+    background-color: $color-ppal;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: 2rem 0rem 0rem 0rem;
+    color: white;
+}

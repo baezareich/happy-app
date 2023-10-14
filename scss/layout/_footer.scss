@@ -1,0 +1,41 @@
+.logo-footer img {
+    width: 15rem;
+    margin: 2rem 2rem 0rem 2rem;
+}
+
+.logo-footer p {
+    margin: 2rem 2rem 0rem 2rem;
+    color: white;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    background-color: $color-ppal;
+}
+
+.footer-container2 ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 3.25rem 3.25rem 0rem 0rem;
+    list-style: none;
+}
+
+.footer-container2 ul li a {
+    text-decoration: none;
+    font-family: montserrat;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+}
+
+.form-container {
+    margin-top: 3.25rem;
+}
+
+.form-container form {
+    font-family: montserrat;
+    margin-bottom: 2rem;
+    text-align: center;
+}
