@@ -1,3 +1,72 @@
+.div-padre {
+    padding-top: 20px;
+    display: grid;
+    width: 100%;
+    height: 648px;
+    grid-template-columns: 35% auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    grid-template-areas: 
+    "div1 div5"
+    "div2 div5"
+    "div3 div5"
+    "div4 div5";
+}
+
+.div-1 {
+    grid-area: div1;
+}
+.div-2 {
+    grid-area: div2;
+}
+.div-3 {
+    grid-area: div3;
+}
+.div-4 {
+    grid-area: div4;
+}
+.div-5 {
+    grid-area: div5;
+}
+
+%grid-div {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 250px;
+    height: 150px;
+    border: solid 2px black;
+    font-family: montserrat;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    grid-template-areas: 
+    "img h3"
+    "p p p";
+}
+
+.div-1 {
+    @extend %grid-div;
+}
+
+.div-2 {
+    @extend %grid-div;
+}
+
+.div-3 {
+    @extend %grid-div;
+}
+
+.div-4 {
+    @extend %grid-div;
+}
+
+    .div-5 {
+        border: solid 2px black;
+        font-family: montserrat;
+        margin-right: 20px;
+        width: 100%;
+    }
+
 .form-padre {
     display: grid;
     grid-template-columns:auto auto;

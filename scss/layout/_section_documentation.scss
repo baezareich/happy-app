@@ -17,6 +17,7 @@
 
 .div2-documentation h2 {
     margin-bottom: 2rem;
+    font-size: map-get($font-size, xl);
 }
 
 .div2-documentation p {
@@ -30,6 +31,6 @@
     border: none;
     width: 200px;
     height: 50px;
-    margin: 2rem 0rem 0rem 0rem;
+    margin: 2rem 0rem 2rem 0rem;
     color: white;
 }

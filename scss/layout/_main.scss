@@ -4,16 +4,22 @@
     text-align: center;
     justify-content: space-around;
     background-color: lightgray;
+
+    section {
+        width: 250px;
+        height: 300px;
+        margin: 2px 0px 0px 0px;
+        
+    }
+
+    section article p {
+        font-family: montserrat;
+        font-weight: 300;
+    }
 }
 
-.main-index1 section {
-    width: 250px;
-    height: 300px;
-    margin: 2px 0px 0px 0px;
-    
-}
-
-.main-index1 section article p {
+.features-box {
     font-family: montserrat;
-    font-weight: 300;
+    font-weight: 700;
+    font-size: map-get($font-size, s);
 }

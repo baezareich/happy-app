@@ -1,0 +1,14 @@
+@mixin font-montserrat($weight: 400, $size: 16px, $color: black) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+  }
+  
+
+  @mixin grid-layout($columns, $gap: 10px) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+    justify-content: space-around;
+  }

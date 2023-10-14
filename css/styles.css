@@ -40,14 +40,101 @@ nav ul li a:hover {
   width: 100%;
 }
 
+.div-padre {
+  padding-top: 20px;
+  display: grid;
+  width: 100%;
+  height: 648px;
+  grid-template-columns: 35% auto;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  grid-template-areas: "div1 div5" "div2 div5" "div3 div5" "div4 div5";
+}
+
+.div-1 {
+  grid-area: div1;
+}
+
+.div-2 {
+  grid-area: div2;
+}
+
+.div-3 {
+  grid-area: div3;
+}
+
+.div-4 {
+  grid-area: div4;
+}
+
+.div-5 {
+  grid-area: div5;
+}
+
+.div-4, .div-3, .div-2, .div-1 {
+  display: grid;
+  grid-template-columns: 100%;
+  width: 250px;
+  height: 150px;
+  border: solid 2px black;
+  font-family: montserrat;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  grid-template-areas: "img h3" "p p p";
+}
+
+.div-5 {
+  border: solid 2px black;
+  font-family: montserrat;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.form-padre {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto 35%;
+  width: 100%;
+  height: 392px;
+  padding-top: 20px;
+  justify-content: center;
+  gap: 10px;
+  grid-template-areas: "input1 input2" "input3 input4" "input5 input5";
+}
+
+.input1 {
+  grid-area: input1;
+}
+
+.input2 {
+  grid-area: input2;
+}
+
+.input3 {
+  grid-area: input3;
+}
+
+.input4 {
+  grid-area: input4;
+}
+
+.input5 {
+  grid-area: input5;
+}
+
+.maps {
+  padding: 20px 20px 20px 20px;
+}
+
 header {
   display: flex;
   background-color: orange;
   justify-content: space-between;
 }
-
 header img {
-  width: 15rem;
+  width: 25rem;
+  padding-right: 80px;
 }
 
 .section-documentation {
@@ -68,6 +155,7 @@ header img {
 
 .div2-documentation h2 {
   margin-bottom: 2rem;
+  font-size: 40px;
 }
 
 .div2-documentation p {
@@ -80,7 +168,7 @@ header img {
   border: none;
   width: 200px;
   height: 50px;
-  margin: 2rem 0rem 0rem 0rem;
+  margin: 2rem 0rem 2rem 0rem;
   color: white;
 }
 
@@ -91,16 +179,19 @@ header img {
   justify-content: space-around;
   background-color: lightgray;
 }
-
 .main-index1 section {
   width: 250px;
   height: 300px;
   margin: 2px 0px 0px 0px;
 }
-
 .main-index1 section article p {
   font-family: montserrat;
   font-weight: 300;
+}
+
+.features-box {
+  font-family: montserrat;
+  font-weight: 700;
 }
 
 .logo-footer img {
@@ -149,6 +240,18 @@ h1 {
   text-align: center;
   font-family: montserrat;
   font-weight: 700;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .grid-layout {
@@ -157,7 +260,6 @@ h1 {
   grid-template-columns: auto auto auto;
   justify-content: space-around;
 }
-
 .grid-layout section {
   text-align: center;
   margin-top: 10px;
@@ -172,7 +274,6 @@ h1 {
   background-color: black;
   text-align: center;
 }
-
 .download-section h2 {
   color: white;
   font-family: montserrat;
@@ -193,6 +294,7 @@ h1 {
 
 .screenshots-features h1 {
   padding: 25px;
+  font-size: 2.3406rem;
 }
 
 .screenshots-features article {
@@ -226,96 +328,21 @@ h1 {
 .section-download {
   margin: 80px 0px 80px 0px;
 }
-
 .section-download article h1 {
   font-family: montserrat;
-  font-size: 62px;
+  font-size: 60px;
 }
-
 .section-download article h2 {
   font-family: montserrat;
   font-size: 40px;
   text-align: center;
   font-weight: 600;
 }
-
 .section-download article h3 {
   font-family: montserrat;
   font-size: 30px;
   text-align: center;
   font-weight: 600;
-}
-
-.div-padre {
-  padding-top: 20px;
-  display: grid;
-  width: 100%;
-  height: 648px;
-  grid-template-columns: 35% auto;
-  grid-template-rows: auto auto auto auto;
-  justify-content: center;
-  grid-template-areas: "div1 div5" "div2 div5" "div3 div5" "div4 div5";
-}
-
-.div-1 {
-  grid-area: div1;
-}
-
-.div-2 {
-  grid-area: div2;
-}
-
-.div-3 {
-  grid-area: div3;
-}
-
-.div-4 {
-  grid-area: div4;
-}
-
-.div-5 {
-  grid-area: div5;
-}
-
-.features-box {
-  font-family: montserrat;
-  font-weight: 700;
-}
-
-.form-padre {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto 35%;
-  width: 100%;
-  height: 392px;
-  padding-top: 20px;
-  justify-content: center;
-  gap: 10px;
-  grid-template-areas: "input1 input2" "input3 input4" "input5 input5";
-}
-
-.input1 {
-  grid-area: input1;
-}
-
-.input2 {
-  grid-area: input2;
-}
-
-.input3 {
-  grid-area: input3;
-}
-
-.input4 {
-  grid-area: input4;
-}
-
-.input5 {
-  grid-area: input5;
-}
-
-.maps {
-  padding: 20px 20px 20px 20px;
 }
 
 @media (max-width: 1024px) {
@@ -448,34 +475,41 @@ h1 {
   width: 100%;
 }
 
-.section-ppal div {
-  width: 50%;
-}
-
 .section-ppal {
   display: flex;
   background: orange;
   padding-left: 2rem;
   justify-content: space-between;
 }
-
-.section-ppal div h1 {
-  font-family: montserrat;
-  font-weight: 700;
-  font-size: 2.3406rem;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-  color: white;
+.section-ppal div {
+  width: 50%;
 }
-
-.section-ppal div p {
+.section-ppal h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.section-ppal p {
   font-family: montserrat;
   font-weight: 300;
   margin-bottom: 1rem;
   text-align: left;
-  color: white;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
 }
-
 .section-ppal button {
   font-family: montserrat;
   font-weight: 600;
@@ -485,112 +519,6 @@ h1 {
   color: white;
   background-color: transparent;
   border-color: white;
-}
-
-.div-1 {
-  display: grid;
-  grid-template-columns: 10% auto;
-  width: 250px;
-  height: 100px;
-  border: solid 2px black;
-  font-family: montserrat;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  grid-template-areas: "img h3" "p p";
-}
-
-.div-1 img {
-  grid-area: img;
-}
-
-.div-1 h3 {
-  grid-area: h3;
-}
-
-.div-1 p {
-  grid-area: p;
-}
-
-.div-2 {
-  display: grid;
-  grid-template-columns: 10% auto;
-  width: 250px;
-  height: 100px;
-  border: solid 2px black;
-  font-family: montserrat;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  grid-template-areas: "img h3" "p p";
-}
-
-.div-2 img {
-  grid-area: img;
-}
-
-.div-2 h3 {
-  grid-area: h3;
-}
-
-.div-2 p {
-  grid-area: p;
-}
-
-.div-3 {
-  display: grid;
-  grid-template-columns: 10% auto;
-  width: 250px;
-  height: 100px;
-  border: solid 2px black;
-  font-family: montserrat;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  grid-template-areas: "img h3" "p p";
-}
-
-.div-3 img {
-  grid-area: img;
-}
-
-.div-3 h3 {
-  grid-area: h3;
-}
-
-.div-3 p {
-  grid-area: p;
-}
-
-.div-4 {
-  display: grid;
-  grid-template-columns: 10% auto;
-  width: 250px;
-  height: 100px;
-  border: solid 2px black;
-  font-family: montserrat;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  grid-template-areas: "img h3" "p p";
-}
-
-.div-4 img {
-  grid-area: img;
-}
-
-.div-4 h3 {
-  grid-area: h3;
-}
-
-.div-4 p {
-  grid-area: p;
-}
-
-.div-5 {
-  border: solid 2px black;
-  font-family: montserrat;
-  margin-right: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

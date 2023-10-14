@@ -3,8 +3,21 @@
 h1 {
 
     text-align: center;
-    font-family: montserrat;
+    font-family: $tipografia-gral;
     font-weight: 700;
+    animation-duration: 3s;
+                animation-name: slidein;
+                @keyframes slidein {
+                    from {
+                margin-left: 100%;
+                width: 300%;
+                    }
+                
+                    to {
+                    margin-left: 0%;
+                    width: 100%;
+                    }
+            }
 }
 
 .grid-layout {
@@ -13,35 +26,33 @@ h1 {
     grid-template-columns: auto auto auto;
     justify-content: space-around;
     
-    
-}
 
-.grid-layout section {
-    text-align: center;
-    margin-top: 10px;
-    width: 20.5rem;
-    height: 11.6875rem;
-    border: 3px solid black;
-    margin-bottom: 15px;
-    font-family: montserrat;
+    section {
+        text-align: center;
+        margin-top: 10px;
+        width: 20.5rem;
+        height: 11.6875rem;
+        border: 3px solid black;
+        margin-bottom: 15px;
+        font-family: $tipografia-gral;
+    }
+    
 }
 
 .download-section {
     background-color: black;
     text-align: center;
     
-
+    h2 {
+        color: white;
+        font-family: $tipografia-gral; 
+        }
 }
 
-.download-section h2 {
-    color: white;
-    font-family: montserrat;  
-
-}
 
 .download-section button {
     border: 4px solid white;
-    font-family: montserrat;
+    font-family: $tipografia-gral;
     font-weight: 700;
     font-size: 20px;
     background-color: transparent;
@@ -55,6 +66,7 @@ h1 {
 
 .screenshots-features h1{
     padding: 25px;
+    font-size: $h1size;
 }
 
 .screenshots-features article {
@@ -87,58 +99,23 @@ h1 {
 
 .section-download {
     margin: 80px 0px 80px 0px;
-}
 
-.section-download article h1 {
-    font-family: montserrat;
-    font-size: 62px;
-}
+    article h1 {
+        font-family: $tipografia-gral;
+        font-size: 60px;
+    }
 
-.section-download article h2 {
-    font-family: montserrat;
-    font-size: 40px;
-    text-align: center;
-    font-weight: 600;
-}
-.section-download article h3 {
-    font-family: montserrat;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 600;
-}
+    article h2 {
+        font-family: montserrat;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 600;
+    }
 
-.div-padre {
-    padding-top: 20px;
-    display: grid;
-    width: 100%;
-    height: 648px;
-    grid-template-columns: 35% auto;
-    grid-template-rows: auto auto auto auto;
-    justify-content: center;
-    grid-template-areas: 
-    "div1 div5"
-    "div2 div5"
-    "div3 div5"
-    "div4 div5";
+    article h3 {
+        font-family: montserrat;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
 }
-
-.div-1 {
-    grid-area: div1;
-}
-.div-2 {
-    grid-area: div2;
-}
-.div-3 {
-    grid-area: div3;
-}
-.div-4 {
-    grid-area: div4;
-}
-.div-5 {
-    grid-area: div5;
-}
-
-.features-box {
-    font-family: montserrat;
-    font-weight: 700;
 }
