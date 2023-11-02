@@ -4,26 +4,24 @@
         flex-direction: column;
         align-items: center;
         padding-left: 0;
-    }
-
-    .section-ppal div {
+    div {
 
         width: 100%;
         text-align: center;
         }
-
-    .section-ppal button{
+    button{
         margin: auto;
         text-align: center;
         align-items: center;
         }
 
+    div p {
+        text-align: center;
+    }
+}
+
     .img-index {
         width: 100%;
-    }
-
-    .section-ppal div p {
-        text-align: center;
     }
 
 .grid-layout {
@@ -31,7 +29,6 @@
     }
     
     
-
     .download-section img {
         max-width: 100%;
         

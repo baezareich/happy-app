@@ -13,19 +13,18 @@
     width: 50%;
     font-family: montserrat;
     margin: 10rem 4rem 0rem 4rem;
-}
 
-.div2-documentation h2 {
+    h2 {
     margin-bottom: 2rem;
     font-size: map-get($font-size, xl);
 }
 
-.div2-documentation p {
+    p {
     margin-bottom: 2rem;
 }
 
 
-.div2-documentation button {
+    button {
     background-color: $color-ppal;
     border-radius: 5px;
     border: none;
@@ -33,4 +32,5 @@
     height: 50px;
     margin: 2rem 0rem 2rem 0rem;
     color: rgb(63, 36, 36);
+}
 }

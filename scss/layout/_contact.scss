@@ -1,101 +1,57 @@
-.div-padre {
-    padding-top: 20px;
-    display: grid;
+input[type=text], select, textarea{
     width: 100%;
-    height: 648px;
-    grid-template-columns: 35% auto;
-    grid-template-rows: auto auto auto auto;
-    justify-content: center;
-    grid-template-areas: 
-    "div1 div5"
-    "div2 div5"
-    "div3 div5"
-    "div4 div5";
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
-.div-1 {
-    grid-area: div1;
-}
-.div-2 {
-    grid-area: div2;
-}
-.div-3 {
-    grid-area: div3;
-}
-.div-4 {
-    grid-area: div4;
-}
-.div-5 {
-    grid-area: div5;
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
 }
 
-%grid-div {
-    display: grid;
-    grid-template-columns: 100%;
-    width: 250px;
-    height: 150px;
-    border: solid 2px black;
-    font-family: montserrat;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    grid-template-areas: 
-    "img h3"
-    "p p p";
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
 }
 
-.div-1 {
-    @extend %grid-div;
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
 }
 
-.div-2 {
-    @extend %grid-div;
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
 }
 
-.div-3 {
-    @extend %grid-div;
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
 }
 
-.div-4 {
-    @extend %grid-div;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-    .div-5 {
-        border: solid 2px black;
-        font-family: montserrat;
-        margin-right: 20px;
-        width: 100%;
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+width: 100%;
+margin-top: 0;
     }
-
-.form-padre {
-    display: grid;
-    grid-template-columns:auto auto;
-    grid-template-rows: auto auto 35%;
-    width: 100%;
-    height: 392px;
-    padding-top: 20px;
-    justify-content: center;
-    gap: 10px;
-    grid-template-areas: 
-    "input1 input2"
-    "input3 input4"
-    "input5 input5";
-}
-
-.input1  {
-    grid-area: input1 ;
-}
-.input2  {
-    grid-area: input2 ;
-}
-.input3  {
-    grid-area: input3 ;
-}
-.input4  {
-    grid-area: input4 ;
-}
-.input5  {
-    grid-area: input5 ;
 }
 
 .maps {

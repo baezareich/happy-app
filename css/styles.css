@@ -18,7 +18,7 @@ nav ul {
   font-family: montserrat;
   font-weight: 600;
   gap: 1.25rem;
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
   width: auto;
 }
@@ -40,91 +40,68 @@ nav ul li a:hover {
   width: 100%;
 }
 
-.div-padre {
-  padding-top: 20px;
-  display: grid;
+input[type=text], select, textarea {
   width: 100%;
-  height: 648px;
-  grid-template-columns: 35% auto;
-  grid-template-rows: auto auto auto auto;
-  justify-content: center;
-  grid-template-areas: "div1 div5" "div2 div5" "div3 div5" "div4 div5";
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
-.div-1 {
-  grid-area: div1;
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
-.div-2 {
-  grid-area: div2;
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
 
-.div-3 {
-  grid-area: div3;
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-.div-4 {
-  grid-area: div4;
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
 }
 
-.div-5 {
-  grid-area: div5;
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
 }
 
-.div-4, .div-3, .div-2, .div-1 {
-  display: grid;
-  grid-template-columns: 100%;
-  width: 250px;
-  height: 150px;
-  border: solid 2px black;
-  font-family: montserrat;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  grid-template-areas: "img h3" "p p p";
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.div-5 {
-  border: solid 2px black;
-  font-family: montserrat;
-  margin-right: 20px;
-  width: 100%;
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
-
-.form-padre {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto 35%;
-  width: 100%;
-  height: 392px;
-  padding-top: 20px;
-  justify-content: center;
-  gap: 10px;
-  grid-template-areas: "input1 input2" "input3 input4" "input5 input5";
-}
-
-.input1 {
-  grid-area: input1;
-}
-
-.input2 {
-  grid-area: input2;
-}
-
-.input3 {
-  grid-area: input3;
-}
-
-.input4 {
-  grid-area: input4;
-}
-
-.input5 {
-  grid-area: input5;
-}
-
 .maps {
   padding: 20px 20px 20px 20px;
+}
+
+.download-plataformas {
+  width: 100%;
+  height: 100%;
 }
 
 header {
@@ -152,16 +129,13 @@ header img {
   font-family: montserrat;
   margin: 10rem 4rem 0rem 4rem;
 }
-
 .div2-documentation h2 {
   margin-bottom: 2rem;
   font-size: 40px;
 }
-
 .div2-documentation p {
   margin-bottom: 2rem;
 }
-
 .div2-documentation button {
   background-color: orange;
   border-radius: 5px;
@@ -181,10 +155,10 @@ header img {
 }
 .main-index1 section {
   width: 250px;
-  height: 300px;
+  height: 350px;
   margin: 2px 0px 0px 0px;
 }
-.main-index1 section article p {
+.main-index1 article p {
   font-family: montserrat;
   font-weight: 300;
 }
@@ -198,7 +172,6 @@ header img {
   width: 15rem;
   margin: 2rem 2rem 0rem 2rem;
 }
-
 .logo-footer p {
   margin: 2rem 2rem 0rem 2rem;
   color: white;
@@ -225,14 +198,13 @@ header img {
   color: white;
 }
 
-.form-container {
-  margin-top: 3.25rem;
-}
-
 .form-container form {
   font-family: montserrat;
-  margin-bottom: 2rem;
   text-align: center;
+  margin: 20px 20px 20px 20px;
+}
+.form-container button {
+  margin: 15px;
 }
 
 /*Features Code*/
@@ -345,6 +317,11 @@ h1 {
   font-weight: 600;
 }
 
+.img-features {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1024px) {
   header {
     flex-direction: column;
@@ -378,7 +355,7 @@ h1 {
     flex-direction: column;
   }
   .section-documentation div img {
-    width: 99%;
+    width: 100%;
     margin: 0;
   }
   .div2-documentation {
@@ -396,10 +373,6 @@ h1 {
     width: 100%;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
-  }
-  .section-documentation div img {
-    width: 60%;
-    margin: 0;
   }
   .img-documentation {
     display: flex;
@@ -458,11 +431,11 @@ h1 {
     text-align: center;
     align-items: center;
   }
-  .img-index {
-    width: 100%;
-  }
   .section-ppal div p {
     text-align: center;
+  }
+  .img-index {
+    width: 100%;
   }
   .grid-layout {
     grid-template-columns: auto;
